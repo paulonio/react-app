@@ -1,0 +1,226 @@
+@import '../../sass/utils/constants';
+
+.form__content {
+    margin-top: 24px;
+}
+
+.form__container {
+    background-color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    max-width: 50%;
+    margin: 36px auto 0;
+    display: flex;
+    flex-direction: column;
+    padding: 8px 42px 0px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 28px 16px rgba(0, 0, 0, 0.25);
+}
+
+.title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 39px;
+    font-weight: 400;
+    color: $text-color;
+}
+
+.label {
+    font-size: 20px;
+    line-height: 24px;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    &__name {
+        margin-top: 8px;
+    }
+}
+
+.label__personal_data,
+.label__notifications {
+    display: flex;
+    flex-direction: row;
+    color: $text-color;
+}
+
+.input__title {
+    margin-top: 8px;
+    margin-bottom: 8px;
+}
+
+.text__input {
+    padding-left: 6px;
+    border: none;
+    background-color: $search-input-background;
+    color: $text-color;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 27px;
+    &:focus {
+        outline: none;
+    }
+}
+
+.input__birth_date {
+    padding-left: 6px;
+    background-color: $search-input-background;
+    color: $text-color;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+}
+
+.input__avatar {
+    padding-left: 6px;
+    background-color: $search-input-background;
+    color: $text-color;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 19px;
+    border: none;
+}
+
+.select__country {
+    padding-left: 6px;
+    background-color: $search-input-background;
+    color: $text-color;
+    border-radius: 8px;
+    font-size: 20px;
+    line-height: 27px;
+    border: none;
+}
+
+.label__personal_data {
+    margin-top: 16px;
+    align-items: center;
+}
+
+.switcher {
+    display: inline-block;
+    width: 45px;
+    height: 22px;
+    background-color: $text-color;
+    border-radius: 11px;
+    cursor: pointer;
+    transition: .3s;
+    &::before {
+        content: '';
+        display: inline-block;
+        height: 22px;
+        width: 22px;
+        border-radius: 11px;
+        background-color: $search-button-background;
+        transition: .3s;
+    }
+}
+
+.input__switcher {
+    display: none;
+    &:checked + .switcher::before {
+        transform: translateX(23px);
+    }
+    &:checked + .switcher {
+        background-color: $search-input-background;
+    }
+}
+
+.personal_data {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.label__notifications {
+    margin-top: 16px;
+}
+
+.notifications {
+    margin-left: 8px;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.form__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    margin: 16px auto;
+}
+
+.button {
+    width: 180px;
+    height: 32px;
+    border: none;
+    border-radius: 8px;
+    color: $text-color;
+    font-size: 20px;
+    line-height: 24px;
+    background-color: $search-button-background;
+    &:hover {
+        cursor: pointer;
+        background-color: $item-background-color;
+    }
+    transition: .3s;
+    &:disabled {
+        background-color: $search-input-background;
+        cursor: default;
+    }
+}
+
+.form__cards {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 255px;
+    background-color: $item-background-color;
+    margin-bottom: 32px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        box-shadow: 0px 0px 28px 16px rgba(0, 0, 0, 0.25);
+    }
+    &__content {
+        font-family: 'Inter', sans-serif;
+        padding: 8px 13px 11px;
+    }
+    &__description {
+        margin-top: 8px;
+        font-size: 16px;
+        line-height: 19px;
+        font-weight: 400;
+        color: $text-color;
+    }
+    &__name {
+        margin-top: 8px;
+        font-size: 24px;
+        line-height: 29px;
+        font-weight: 400;
+        color: $item-title-color;
+    }
+}
+
+.image__container {
+    height: 169px;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.card__image {
+    width: 100%;
+    height: 100%;
+}
+
+.error__message {
+    height: 18px;
+    font-size: 14px;
+    color: #FF0000;
+    margin-top: 4px;
+}

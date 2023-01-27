@@ -1,0 +1,39 @@
+@import '../../sass/utils/constants';
+
+.header {
+    margin-top: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.navigation__links {
+    display: flex;
+}
+
+.navigation__item {
+    list-style: none;
+    margin-left: 16px;
+    &:first-child {
+        margin-left: 0;
+    }
+}
+
+.navigation__link {
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 27px;
+    color: $navigation-link-color;
+    transition: .3s;
+    &:hover {
+        cursor: pointer;
+        color: $navigation-link-color-active;
+        border-bottom: 1px solid #000000;
+    }
+    &:global.active {
+        color: $navigation-link-color-active;
+        border-bottom: 1px solid #000000;
+    }
+}
+

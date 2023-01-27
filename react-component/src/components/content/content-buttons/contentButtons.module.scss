@@ -1,0 +1,30 @@
+@import '../../../sass/utils/constants';
+
+.content__buttons {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+    width: 48px;
+    height: 48px;
+    font-size: 20px;
+    line-height: 27px;
+    background-color: $search-button-background;
+    border: none;
+    border-radius: 50%;
+    transition: .3s;
+    &:first-child {
+        margin-left: 0;
+    }
+    &:hover {
+        background-color: $item-background-color;
+        cursor: pointer;
+    }
+}

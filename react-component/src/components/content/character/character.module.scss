@@ -1,0 +1,49 @@
+@import '../../../sass/utils/constants';
+
+.container {
+    font-family: 'Inter', sans-serif; 
+    color: $item-title-color;
+    height: calc( 100vh - 50px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title {
+    font-size: 24px;
+    color: $item-title-color;
+}
+.data {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+}
+
+.image {
+    max-width: 300px;
+    max-height: 300px;
+    margin-right: 24px;
+}
+
+.description {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 16px;
+    &:first-child {
+        margin-top: 0;
+    }
+    &__title {
+        color: $text-color;
+    }
+}
+
+.back__link {
+    display: inline-block;
+    margin-top: 12px;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    line-height: 27px;
+    color: $text-color;
+    &:hover {
+        text-decoration: none;
+    }
+}

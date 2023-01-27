@@ -1,0 +1,214 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Content render content component with data 1`] = `null`;
+
+exports[`Content renders content component after data loaded 1`] = `
+<section
+  className="home__content"
+>
+  <ContentHeader
+    handleChange={[Function]}
+    handleKeyboardEvent={[Function]}
+    handleSearch={[Function]}
+    inputValue=""
+  />
+  <div
+    className="select__container"
+  >
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "By creation",
+            "value": "by-creation",
+          },
+          Object {
+            "label": "By name",
+            "value": "by-name",
+          },
+          Object {
+            "label": "By species",
+            "value": "by-species",
+          },
+        ]
+      }
+    />
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "12 per page",
+            "value": "12",
+          },
+          Object {
+            "label": "16 per page",
+            "value": "16",
+          },
+          Object {
+            "label": "20 per page",
+            "value": "20",
+          },
+        ]
+      }
+    />
+  </div>
+  <Cards
+    data={
+      Array [
+        Object {
+          "created": "2017-11-04T18:48:46.250Z",
+          "episode": Array [
+            "https://rickandmortyapi.com/api/episode/1",
+            "https://rickandmortyapi.com/api/episode/2",
+          ],
+          "gender": "Male",
+          "id": 1,
+          "image": "https://rickandmortyapi.com/api/character/avatar/1.jpeg",
+          "location": Object {
+            "name": "Earth",
+            "url": "https://rickandmortyapi.com/api/location/20",
+          },
+          "name": "Mocked name",
+          "origin": Object {
+            "name": "Earth",
+            "url": "https://rickandmortyapi.com/api/location/1",
+          },
+          "species": "Human",
+          "status": "Alive",
+          "type": "",
+          "url": "https://rickandmortyapi.com/api/character/1",
+        },
+      ]
+    }
+    handleCardClick={[Function]}
+    modalSetActive={[Function]}
+  />
+  <ContentButtons
+    totalPages={2}
+  />
+</section>
+`;
+
+exports[`Content renders content component after fetch rejected 1`] = `
+<section
+  className="home__content"
+>
+  <ContentHeader
+    handleChange={[Function]}
+    handleKeyboardEvent={[Function]}
+    handleSearch={[Function]}
+    inputValue=""
+  />
+  <div
+    className="select__container"
+  >
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "By creation",
+            "value": "by-creation",
+          },
+          Object {
+            "label": "By name",
+            "value": "by-name",
+          },
+          Object {
+            "label": "By species",
+            "value": "by-species",
+          },
+        ]
+      }
+    />
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "12 per page",
+            "value": "12",
+          },
+          Object {
+            "label": "16 per page",
+            "value": "16",
+          },
+          Object {
+            "label": "20 per page",
+            "value": "20",
+          },
+        ]
+      }
+    />
+  </div>
+  <div
+    className="error__message"
+  >
+    Sorry, data not found. 
+    state: null
+  </div>
+</section>
+`;
+
+exports[`Content renders content component on mount 1`] = `
+<section
+  className="home__content"
+>
+  <ContentHeader
+    handleChange={[Function]}
+    handleKeyboardEvent={[Function]}
+    handleSearch={[Function]}
+    inputValue=""
+  />
+  <div
+    className="select__container"
+  >
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "By creation",
+            "value": "by-creation",
+          },
+          Object {
+            "label": "By name",
+            "value": "by-name",
+          },
+          Object {
+            "label": "By species",
+            "value": "by-species",
+          },
+        ]
+      }
+    />
+    <CustomSelect
+      handler={[Function]}
+      options={
+        Array [
+          Object {
+            "label": "12 per page",
+            "value": "12",
+          },
+          Object {
+            "label": "16 per page",
+            "value": "16",
+          },
+          Object {
+            "label": "20 per page",
+            "value": "20",
+          },
+        ]
+      }
+    />
+  </div>
+  <div
+    className="error__message"
+  >
+    Sorry, data not found. 
+    state: null
+  </div>
+</section>
+`;
